@@ -17,5 +17,13 @@ public class TrackCoach implements Coach {
 	public String getDailyFortune() {
 		return fortuneService.getFortune();
 	}
+	
+	public void startingBean() {
+		System.out.println("Track er Khela shuru");
+	}
+	
+	public void endingBean() {
+		System.out.println("Track er Khela shesh");
+	}
 
 }
