@@ -22,6 +22,10 @@
           class="demo.BaseballCoach">
           <constructor-arg ref = "myFortune"/>
     </bean>
+    <bean id = "myCricketCoach"
+          class="demo.CricketCoach">
+          <property name="fortuneService" ref = "myUnFortune"/>
+    </bean>
     
 </beans>
 
