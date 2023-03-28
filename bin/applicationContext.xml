@@ -25,6 +25,8 @@
     <bean id = "myCricketCoach"
           class="demo.CricketCoach">
           <property name="fortuneService" ref = "myUnFortune"/>
+          <property name="emailAddress" value = "cricket@team.com"/>
+          <property name="team" value = "cricket team"/>
     </bean>
     
 </beans>
