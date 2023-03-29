@@ -1,0 +1,8 @@
+package demo;
+
+public class MyApp {
+	BaseballCoach theCoach = new BaseballCoach();
+//	System(theCoach.getDailyWorkout());
+	System.out.println(theCoach.getDailyWorkout());
+
+}
