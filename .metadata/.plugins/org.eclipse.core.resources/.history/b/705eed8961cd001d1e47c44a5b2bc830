@@ -1,9 +1,0 @@
-package demo;
-
-/**
- * @author BS1123
- *
- */
-public interface Coach {
-	public String getDailyWorkout();
-}

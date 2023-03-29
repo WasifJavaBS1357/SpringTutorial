@@ -1,5 +1,8 @@
 package demoForAnnotations;
 
+import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
@@ -15,6 +18,17 @@ public class TennisCoach implements Coach {
 	public TennisCoach() {
 			System.out.println("Default constructor called");
 	}
+	
+	@PostConstruct
+	public void secondConstruct(){
+		System.out.println("second construct");
+	}
+	
+	@PreDestroy
+	public void secondDestruct(){
+		System.out.println("second destruct");
+	}
+	
 
 //	@Autowired
 //	public TennisCoach(FortuneService fortuneService) {
